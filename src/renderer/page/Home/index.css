@@ -1,0 +1,223 @@
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 70%;
+  box-sizing: border-box;
+}
+.devices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55px;
+  justify-content: space-around;
+}
+.view {
+  width: 16%;
+}
+.eval-devices {
+  max-width: 120px;
+}
+.devices-control {
+  height: 100%;
+}
+.label {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 2px;
+  border: 1px solid #919191;
+}
+.devices input {
+  font-size: 12px;
+  padding: 3px 6px;
+}
+.devices button {
+  width: 100%;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 49px;
+  padding: 0 20px;
+}
+.eval-devices button {
+  padding: 3px 0px;
+  font-size: 12px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+.content-start {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.content-tab {
+  display: flex;
+  margin: 10px 11px 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background: rgba(16, 16, 16, 0.4784313725);
+  overflow: hidden;
+}
+.content-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0;
+  box-sizing: border-box;
+  border: 0;
+  cursor: pointer;
+}
+.tab-active {
+  background: #1d1d22c4;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+.content-center, .content-footer {
+  margin: 0 11px 11px;
+}
+.content-center {
+  height: 50%;
+  background: #1010107a;
+  border-radius: 0;
+  padding: 10px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  box-sizing: border-box;
+  border: 0;
+}
+.content-footer {
+  padding: 10px 10px 10px 5px;
+  box-sizing: border-box;
+  background: #1010107a;
+  display: flex;
+  flex: 1;
+  margin-bottom: 0;
+  border-radius: 7px;
+  max-height: 37%;
+}
+.logcat-result {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  widht: 100%;
+}
+.content-config {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3px;
+  align-items: center;
+}
+.content-config img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+}
+.content-config img:last-child {
+  width: 17px;
+  height: 17px;
+}
+.footer-view {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.footer-result {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.footer-result div:not(:first-child) {
+  margin-top: 5px;
+}
+
+.cmd {
+  display: flex;
+  align-items: center;
+}
+
+.input-view {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+  border-top-left-radius: 4px;
+  overflow: hidden;
+  border-bottom-left-radius: 4px;
+}
+.input-view input {
+  font-size: 12px;
+  border: 0;
+  outline: none;
+  flex: 1;
+  margin-right: 10px;
+  background: #ffffff00;
+  color: #ffffff;
+}
+
+.package-name {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+.package-name div {
+  white-space: nowrap;
+}
+  /* 定义滚动条样式 */
+.main-permission::-webkit-scrollbar,.footer-view::-webkit-scrollbar, .package-name::-webkit-scrollbar, .logcat-result::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 3px;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.main-permission::-webkit-scrollbar-track,.footer-view::-webkit-scrollbar-track, .package-name::-webkit-scrollbar-track, .logcat-result::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, .5);
+}
+/*定义滑块 内阴影+圆角*/
+.main-permission::-webkit-scrollbar-thumb,.footer-view::-webkit-scrollbar-thumb, .package-name::-webkit-scrollbar-thumb, .logcat-result::-webkit-scrollbar-thumb  {
+  border-radius: 10px;
+  box-shadow: inset 0 0 0px rgba(237, 44, 37, .5);
+  background-color: rgba(237, 44, 37, .5);
+}
+
+.package-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 5px 0;
+}
+.package-control {
+  display: flex;
+}
+.package-control div {
+  font-size: 12px;
+  padding: 2px 3px;
+  border: 1px solid #f2f2f2;
+  margin-left: 7px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.main-permission {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
